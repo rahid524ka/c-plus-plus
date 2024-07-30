@@ -17,17 +17,17 @@ class mark{
     void display(){
         cout<< intmark <<endl<< extmarks <<endl;
     }
-    mark operator*(mark m){
+    mark operator+(mark m){
         mark temp;
-        temp.intmark = intmark * m.intmark;
-        temp.extmarks = extmarks * m.extmarks;
+        temp.intmark = intmark + m.intmark;
+        temp.extmarks = extmarks + m.extmarks;
         return temp;
     }
 
 };
 int main(){
     mark s1(10,21),s2(2,3);
-    mark s3 = s1 * s2;
+    mark s3 = s1 + s2;
     s3.display();
 
 }
